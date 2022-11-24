@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Un libro para todos</title>
+    <meta name="Hecho por  Sergio Gómez Oblanca" content="Un libro para todos">
+    <meta  name="date" content="11-11-2022">
+    <meta charset="utf-8" />
+    <script src="https://kit.fontawesome.com/089af10782.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        @import "CSS/estilos.css";
+    </style>
+    </style>
+<script type="text/javascript" src="./JS/Funciones.js">
+    window.onload = function() {
+        document.getElementById("boton").onclick=formulariu;
+    }
+</script>
+</head>
+
+<body>
+    <header>
+        <div id="fondo">
+            <a href="index.html"><img alt="" id="logotipo" src="IMG/icono.png"></a>
+            <p id="woso">Un Libro Para Todos </p>
+        </div>
+        <div class="ancho">
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">INICIO</a>
+                    </li>
+                   
+                    <li>
+                        <a href="formulario.html">FORMULARIO</a>
+                    </li>
+                    <li>
+                        <a href="sobreMi.html">SOBRE NOSOTROS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>1 Datos personales</legend><b></b>
+                <p></p>
+                <div>
+                    <h4>Todos los campos con * son obligatorios</h4>
+                </div>
+                <div>
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="Nombre" value="" required><br>
+                    <p></p>
+                </div>
+                <div>
+                    <label for="apellido1">Primer Apellido *</label>
+                    <input type="text" id="apellido1" name="Nombre" value="" required><br>
+                    <p></p>
+                </div>
+                <div>
+                    <div>
+                        <label for="apellido2">Segundo Apellido</label>
+                        <input type="text" id="apellido2" name="Nombre" value=""><br>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <label for="dni">DNI o pasaporte</label>
+                        <input type="text" id="dni" name="DNI" value="DNI o Passaport"><br>
+                        <p></p>
+                    </div>
+                    <div>
+                        <label for="nacimiento">Fecha de nacimiento</label>
+                        <input type="date" id="nacimiento" name="DNI" value=""><br>
+                        <p></p>
+                    </div>
+                    </div>
+            </fieldset>
+            <p></p>
+            <fieldset>
+                <legend> 2 Datos de contacto </legend>
+                <p></p>
+                <div>
+                    <label for="correo">Correo electronico *</label>
+                    <input type="text" id="correo" required>
+                </div>
+                <br>
+                <div>
+                    <label for="codigoPostal">Codigo Postal *</label>
+                    <input type="text" id="codigoPostal" required>
+                </div>
+                <br>
+                <div>
+                    <label for="direccionPostal">Direccion Postal *</label>
+                    <input type="text" id="direccionPostal" required>
+                </div>
+                <br>
+                <div>
+                    <label for="poblacion">Poblacion *</label>
+                    <input type="text" id="poblacion" required>
+                </div>
+            </fieldset>
+            <p></p>
+            <fieldset>
+            <fieldset>
+                    
+                    <div>
+                        <label for="enviar"></label>
+                        <input  type="button" id="boton" value="ENVIAR" onclick="formulariu()">
+
+                    </div>
+                
+
+            </fieldset>
+
+        </form>
+    </main>
+    <footer>
+        <div class="iconos">
+            <a id="twitters" href="https://twitter.com/login?lang=es"> <i class="fab fa-twitter-square fa-2x"></i></a>
+            <a id="youtuba" href="https://www.youtube.com/?hl=es&gl=ES"><i class="fab fa-youtube-square fa-2x"></i></a>
+            <a id="caralibro" href="https://es-es.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a>
+        </div>
+
+        <p id="nombres">Sergio Gómez</p>
+    </footer>
+</body>
+
+</html>
